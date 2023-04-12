@@ -1,1 +1,1 @@
-# barteus.github.io
+# Bartłomiej Poniecki-Klotz personal webpage
