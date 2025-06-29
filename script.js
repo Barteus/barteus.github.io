@@ -192,7 +192,7 @@ function populateArticles() {
         }
         
         return `
-            <article class="article-card ${index >= 2 ? 'hidden' : ''}" onclick="openArticle('${article.url}')">
+            <article class="article-card ${index >= 5 ? 'hidden' : ''}" onclick="openArticle('${article.url}')">
                 <h4 class="article-title">${article.title}</h4>
                 ${tagsDisplay}
                 <div class="article-meta">
@@ -205,9 +205,9 @@ function populateArticles() {
     
     elements.articlesContainer.innerHTML = articlesHTML;
     
-    // Show expand button only if there are more than 2 articles
+    // Show expand button only if there are more than 5 articles
     const expandButton = document.getElementById('expand-button');
-    if (config.articles.length <= 2) {
+    if (config.articles.length <= 5) {
         expandButton.style.display = 'none';
     } else {
         expandButton.style.display = 'inline-flex';
@@ -254,10 +254,10 @@ function addEventListeners() {
             expandText.textContent = 'Show Less';
             this.classList.add('expanded');
         } else {
-            // Hide articles beyond the first 2
+            // Hide articles beyond the first 5
             const allArticles = document.querySelectorAll('.article-card');
             allArticles.forEach((article, index) => {
-                if (index >= 2) {
+                if (index >= 5) {
                     article.classList.add('hidden');
                 }
             });
