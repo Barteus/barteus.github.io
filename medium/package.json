@@ -1,0 +1,23 @@
+{
+  "name": "super-webpage",
+  "version": "1.0.0",
+  "description": "Personal webpage for AI Solution Architect with Medium articles integration",
+  "main": "script.js",
+  "scripts": {
+    "fetch-articles": "node medium/fetch-medium-articles.js",
+    "start": "echo 'Open index.html in your browser'",
+    "build": "npm run fetch-articles"
+  },
+  "dependencies": {
+    "xmldom": "^0.6.0"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "personal-website",
+    "ai",
+    "medium",
+    "static-site"
+  ],
+  "author": "Bartłomiej Poniecki-Klotz",
+  "license": "MIT"
+} 

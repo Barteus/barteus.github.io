@@ -1,0 +1,384 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #374151;
+    background: #ffffff;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Header Section */
+.header {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.profile-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    flex-shrink: 0;
+}
+
+.profile-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e5e7eb;
+    transition: transform 0.2s ease;
+}
+
+.profile-image img:hover {
+    transform: scale(1.02);
+}
+
+.profile-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.name {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.bio {
+    font-size: 1rem;
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    border: 1px solid #e5e7eb;
+    background: #ffffff;
+    color: #374151;
+    min-width: 100px;
+    justify-content: center;
+}
+
+.social-link.linkedin {
+    color: #0077b5;
+    border-color: #0077b5;
+}
+
+.social-link.medium {
+    color: #00ab6c;
+    border-color: #00ab6c;
+}
+
+.social-link.github {
+    color: #333;
+    border-color: #333;
+}
+
+.social-link.twitter {
+    color: #1da1f2;
+    border-color: #1da1f2;
+}
+
+.social-link:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-link i {
+    font-size: 1rem;
+}
+
+/* Articles Section */
+.articles-section {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.articles-section h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 1.5rem;
+}
+
+.articles-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.article-card {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.article-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-color: #d1d5db;
+}
+
+.article-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}
+
+.article-tags {
+    color: #6b7280;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.tag {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s ease;
+}
+
+.tag:hover {
+    background: #e5e7eb;
+    border-color: #d1d5db;
+}
+
+.article-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+    color: #9ca3af;
+}
+
+.article-date {
+    font-weight: 500;
+}
+
+.article-source {
+    background: #f3f4f6;
+    color: #374151;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid #e5e7eb;
+}
+
+.article-source.linkedin {
+    background: #0077b5;
+    color: white;
+    border-color: #0077b5;
+}
+
+.article-source.medium {
+    background: #00ab6c;
+    color: white;
+    border-color: #00ab6c;
+}
+
+/* Expand Button */
+.expand-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #374151;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.expand-button:hover {
+    background: #f9fafb;
+    border-color: #9ca3af;
+    transform: translateY(-1px);
+}
+
+.expand-button i {
+    transition: transform 0.2s ease;
+}
+
+.expand-button.expanded i {
+    transform: rotate(180deg);
+}
+
+/* Hidden Articles */
+.article-card.hidden {
+    display: none;
+}
+
+/* No Articles State */
+.no-articles {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+}
+
+.no-articles p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Loading Animation */
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.loading::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e5e7eb;
+    border-top: 2px solid #3b82f6;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-right: 0.75rem;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    color: #9ca3af;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .header {
+        padding: 2rem;
+    }
+    
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-image img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .name {
+        font-size: 1.75rem;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .articles-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 1.5rem;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+    }
+    
+    .title {
+        font-size: 1rem;
+    }
+    
+    .bio {
+        font-size: 0.95rem;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+} 
