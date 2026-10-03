@@ -11,19 +11,38 @@
     <meta name="twitter:card" content="summary">
     <meta property="og:title" content="Bartłomiej Poniecki-Klotz — Chief Architect">
     <meta property="og:description" content="AI platforms, MLOps and solution architecture — from bare metal to production.">
-    <meta property="og:image" content="https://barteus.github.io/bpk-photo.jpeg">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <meta property="og:image" content="https://barteus.github.io/assets/img/bpk-photo.jpeg">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Bartłomiej Poniecki-Klotz",
+        "jobTitle": "Chief Architect",
+        "worksFor": { "@type": "Organization", "name": "RHAELM" },
+        "url": "https://barteus.github.io/",
+        "image": "https://barteus.github.io/assets/img/bpk-photo.jpeg",
+        "sameAs": [
+            "https://linkedin.com/in/barteus",
+            "https://barteus.medium.com/",
+            "https://github.com/barteus",
+            "https://twitter.com/barteus88"
+        ]
+    }
+    </script>
 </head>
 <body>
-    <nav class="nav">
+    <a href="#main" class="skip-link">Skip to content</a>
+    <nav class="nav" aria-label="Main">
         <div class="nav-inner">
-            <a href="#top" class="nav-brand">BPK</a>
+            <a href="#main" class="nav-brand" aria-label="Back to top">BPK</a>
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#expertise">Expertise</a>
@@ -33,19 +52,19 @@
         </div>
     </nav>
 
-    <main class="container" id="top">
+    <main class="container" id="main">
         <!-- Hero -->
         <header class="hero">
-            <img src="./bpk-photo.jpeg" alt="Bartłomiej Poniecki-Klotz" class="hero-photo">
+            <img src="assets/img/bpk-photo.jpeg" alt="Portrait of Bartłomiej Poniecki-Klotz" class="hero-photo" width="168" height="168" fetchpriority="high">
             <div class="hero-text">
                 <p class="eyebrow">Chief Architect · Wrocław, PL / London, UK</p>
                 <h1>Bartłomiej Poniecki-Klotz</h1>
                 <p class="lead">I design and build AI platforms, from bare-metal GPU clusters to models running in production.</p>
                 <div class="social-links">
-                    <a href="https://linkedin.com/in/barteus" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
-                    <a href="https://barteus.medium.com/" class="social-link" target="_blank" rel="noopener"><i class="fab fa-medium"></i><span>Medium</span></a>
-                    <a href="https://github.com/barteus" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i><span>GitHub</span></a>
-                    <a href="https://twitter.com/barteus88" class="social-link" target="_blank" rel="noopener"><i class="fab fa-x-twitter"></i><span>X</span></a>
+                    <a href="https://linkedin.com/in/barteus" class="social-link" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#linkedin"></use></svg><span>LinkedIn</span></a>
+                    <a href="https://barteus.medium.com/" class="social-link" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#medium"></use></svg><span>Medium</span></a>
+                    <a href="https://github.com/barteus" class="social-link" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#github"></use></svg><span>GitHub</span></a>
+                    <a href="https://twitter.com/barteus88" class="social-link" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#x-twitter"></use></svg><span>X</span></a>
                 </div>
             </div>
         </header>
@@ -70,43 +89,51 @@
             <h2 class="section-title"><span>02</span>Expertise</h2>
             <div class="skills-grid">
                 <article class="skill-card">
-                    <i class="fas fa-sitemap skill-icon"></i>
-                    <h3>Architecture &amp; Leadership</h3>
-                    <p>Setting technical direction and taking ideas from proof of concept to production.</p>
+                    <svg class="icon skill-icon" aria-hidden="true"><use href="assets/img/icons.svg#sitemap"></use></svg>
+                    <h3>Architecture</h3>
+                    <p>End-to-end design of systems that scale, last and adapt to what comes next.</p>
                     <ul class="tags">
-                        <li>Solution Architecture</li><li>Platform Strategy</li><li>Technical Due Diligence</li><li>Team Building &amp; Mentoring</li><li>R&amp;D</li>
+                        <li>Solution Architecture</li><li>System Design</li><li>Platform Strategy</li><li>Build vs Buy</li><li>Tech Due Diligence</li>
                     </ul>
                 </article>
                 <article class="skill-card">
-                    <i class="fas fa-microchip skill-icon"></i>
+                    <svg class="icon skill-icon" aria-hidden="true"><use href="assets/img/icons.svg#people-group"></use></svg>
+                    <h3>Leadership</h3>
+                    <p>Building teams that turn ideas into production.</p>
+                    <ul class="tags">
+                        <li>Technical Vision</li><li>R&amp;D</li><li>Team Building</li><li>Mentoring</li><li>Engineering Standards</li><li>Stakeholder Management</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <svg class="icon skill-icon" aria-hidden="true"><use href="assets/img/icons.svg#microchip"></use></svg>
                     <h3>AI Infrastructure</h3>
                     <p>Sovereign, secure, high-performance platforms for training and serving AI.</p>
                     <ul class="tags">
-                        <li>GPU Cloud</li><li>Kubernetes</li><li>HPC &amp; AI Schedulers</li><li>High-perf Storage</li><li>Bare Metal &amp; Networking</li><li>Linux</li>
+                        <li>GPU Cloud</li><li>Kubernetes</li><li>HPC &amp; Schedulers</li><li>Storage &amp; Networking</li><li>Linux</li>
                     </ul>
                 </article>
                 <article class="skill-card">
-                    <i class="fas fa-gears skill-icon"></i>
+                    <svg class="icon skill-icon" aria-hidden="true"><use href="assets/img/icons.svg#gears"></use></svg>
                     <h3>MLOps &amp; GenAI</h3>
                     <p>Automated environments that let data scientists focus on delivering business value.</p>
                     <ul class="tags">
-                        <li>Kubeflow</li><li>MLflow</li><li>KServe</li><li>RAG &amp; LLM Serving</li><li>NVIDIA NIM</li><li>CI/CD for ML</li>
+                        <li>Kubeflow</li><li>MLflow</li><li>KServe</li><li>NVIDIA NIM</li><li>RAG &amp; LLM Serving</li>
                     </ul>
                 </article>
                 <article class="skill-card">
-                    <i class="fas fa-database skill-icon"></i>
+                    <svg class="icon skill-icon" aria-hidden="true"><use href="assets/img/icons.svg#database"></use></svg>
                     <h3>Data Engineering &amp; Science</h3>
                     <p>Getting value out of data quickly: insights, validated ideas, then products.</p>
                     <ul class="tags">
-                        <li>Python</li><li>Spark</li><li>Kafka</li><li>OpenSearch</li><li>Data Pipelines</li><li>Java</li>
+                        <li>Python</li><li>Spark</li><li>Kafka</li><li>OpenSearch</li><li>Data Pipelines</li>
                     </ul>
                 </article>
                 <article class="skill-card">
-                    <i class="fas fa-cloud skill-icon"></i>
+                    <svg class="icon skill-icon" aria-hidden="true"><use href="assets/img/icons.svg#cloud"></use></svg>
                     <h3>Cloud &amp; DevOps</h3>
                     <p>Public, private and hybrid cloud, automated end to end.</p>
                     <ul class="tags">
-                        <li>AWS</li><li>Azure</li><li>GCP</li><li>Infrastructure as Code</li><li>Security Compliance</li><li>Capacity Planning</li>
+                        <li>AWS</li><li>Azure</li><li>GCP</li><li>Infrastructure as Code</li><li>Security &amp; Compliance</li>
                     </ul>
                 </article>
             </div>
@@ -115,7 +142,7 @@
         <!-- Experience -->
         <section class="section" id="experience">
             <h2 class="section-title"><span>03</span>Experience</h2>
-            <ol class="timeline">
+            <ol class="timeline" id="experience-list">
                 <li>
                     <div class="tl-date">2026 — now</div>
                     <div class="tl-body">
@@ -137,28 +164,28 @@
                         <p>Promoted Dell's AI capabilities across CEE. Scoped top customer use cases and shaped solutions across hardware, software, infrastructure and applications.</p>
                     </div>
                 </li>
-                <li>
+                <li class="hidden">
                     <div class="tl-date">2021 — 2025</div>
                     <div class="tl-body">
                         <h3>AI/ML Field Software Engineer <span>· Canonical</span></h3>
                         <p>Delivered secure, automated MLOps environments covering capacity planning, integration and compliance. Implemented AI/ML projects end to end and trained customers on best practices.</p>
                     </div>
                 </li>
-                <li>
+                <li class="hidden">
                     <div class="tl-date">2017 — 2021</div>
                     <div class="tl-body">
                         <h3>Tech Lead · Data Scientist · DevOps <span>· PGS Software</span></h3>
                         <p>Led engineering teams and built data pipelines, production ML models, and DevOps/MLOps pipelines for clients.</p>
                     </div>
                 </li>
-                <li>
+                <li class="hidden">
                     <div class="tl-date">2015 — 2017</div>
                     <div class="tl-body">
                         <h3>Senior Java Developer, Market Risk <span>· Credit Suisse</span></h3>
                         <p>High-volume data processing and a CQRS-based BPM engine with scheduling.</p>
                     </div>
                 </li>
-                <li>
+                <li class="hidden">
                     <div class="tl-date">2010 — 2015</div>
                     <div class="tl-body">
                         <h3>SAP Consultant, Java/ABAP Developer <span>· NESIM, Vm.pl</span></h3>
@@ -166,27 +193,34 @@
                     </div>
                 </li>
             </ol>
-            <p class="edu"><i class="fas fa-graduation-cap"></i> BSc Computer Science, Wrocław University of Technology · English (fluent), German (elementary)</p>
+            <button type="button" class="expand-button" id="experience-toggle" aria-expanded="false" aria-controls="experience-list">
+                <span>Show more</span>
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#chevron-down"></use></svg>
+            </button>
+            <p class="edu"><svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#graduation-cap"></use></svg> BSc Computer Science, Wrocław University of Technology · English (fluent), German (elementary)</p>
         </section>
 
         <!-- Writing -->
         <section class="section" id="writing">
             <h2 class="section-title"><span>04</span>Writing &amp; Activity</h2>
             <div class="articles-grid" id="articles-container"></div>
-            <button class="expand-button" id="expand-button">
-                <span id="expand-text">Show more</span>
-                <i class="fas fa-chevron-down"></i>
+            <button type="button" class="expand-button" id="expand-button" aria-expanded="false" aria-controls="articles-container">
+                <span>Show more</span>
+                <svg class="icon" aria-hidden="true"><use href="assets/img/icons.svg#chevron-down"></use></svg>
             </button>
         </section>
 
-        <footer class="footer">
-            <p>&copy; <span id="year">2026</span> Bartłomiej Poniecki-Klotz</p>
-        </footer>
     </main>
 
-    <script src="medium-articles.js"></script>
-    <script src="linkedin-activities.js"></script>
-    <script src="youtube-videos.js"></script>
-    <script src="script.js"></script>
+    <footer class="container">
+        <div class="footer">
+            <p>&copy; <span id="year">2026</span> Bartłomiej Poniecki-Klotz</p>
+        </div>
+    </footer>
+
+    <script src="assets/data/medium-articles.js" defer></script>
+    <script src="assets/data/linkedin-activities.js" defer></script>
+    <script src="assets/data/youtube-videos.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
 </body>
 </html>

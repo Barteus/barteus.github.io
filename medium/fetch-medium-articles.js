@@ -5,7 +5,7 @@ const { DOMParser } = require('xmldom');
 
 // Configuration
 const MEDIUM_RSS_URL = 'https://medium.com/feed/@barteus';
-const OUTPUT_FILE = path.join(__dirname, '..', 'medium-articles.js');
+const OUTPUT_FILE = path.join(__dirname, '..', 'assets', 'data', 'medium-articles.js');
 
 // Function to fetch RSS feed
 function fetchRSSFeed(url) {
