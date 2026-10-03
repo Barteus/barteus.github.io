@@ -1,15 +1,16 @@
 const https = require('https');
 const fs = require('fs');
+const path = require('path');
 const { DOMParser } = require('xmldom');
 
 // Configuration
 const MEDIUM_RSS_URL = 'https://medium.com/feed/@barteus';
-const OUTPUT_FILE = '../medium-articles.js';
+const OUTPUT_FILE = path.join(__dirname, '..', 'medium-articles.js');
 
 // Function to fetch RSS feed
 function fetchRSSFeed(url) {
     return new Promise((resolve, reject) => {
-        https.get(url, (res) => {
+        https.get(url, { headers: { 'User-Agent': 'Mozilla/5.0 (compatible; barteus.github.io feed fetcher)' } }, (res) => {
             let data = '';
             
             res.on('data', (chunk) => {

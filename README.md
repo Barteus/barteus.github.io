@@ -33,6 +33,8 @@ cd medium && npm install && node fetch-medium-articles.js
 
 This rewrites `medium-articles.js` from the Medium RSS feed. See `medium/MEDIUM_SETUP.md`.
 
+Or run it on GitHub: **Actions → Update Medium articles → Run workflow**. The workflow commits `medium-articles.js` to `main` only if there are new articles.
+
 ## Publish
 
 Commit and push to `main`. GitHub Pages deploys automatically within a minute or two.

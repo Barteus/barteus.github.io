@@ -4,7 +4,7 @@
   "description": "Personal webpage for AI Solution Architect with Medium articles integration",
   "main": "script.js",
   "scripts": {
-    "fetch-articles": "node medium/fetch-medium-articles.js",
+    "fetch-articles": "node fetch-medium-articles.js",
     "start": "echo 'Open index.html in your browser'",
     "build": "npm run fetch-articles"
   },
